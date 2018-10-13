@@ -14,6 +14,13 @@ var shakeBall = function(){
   var fortuneText = document.createTextNode(magicFortunes[0]);
   yourFortune.appendChild(fortuneText);
 
+  // hides button
+  var hideButton = document.getElementById('generator-button');
+  hideButton.removeChild(button);
+
+  // add fade-in class
+  yourFortune.classList.add('fortune-show');
+
 };
 
 button.onclick = shakeBall;
