@@ -45,6 +45,9 @@ h1 {
 }
 .fortune-show {
 	opacity: 1 !important;
+	transition: opacity 3s;
+	-webkit-transition: opacity 3s;
+	-moz-transition: opacity 3s;
 }
 footer {
 	position: absolute;
