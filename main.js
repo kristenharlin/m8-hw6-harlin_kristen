@@ -10,6 +10,10 @@ yourFortune.appendChild(fortuneTextPlaceholder);
 var shakeBall = function(){
   magicFortunes.sort(function(a, b){return 0.5 - Math.random()});
 
+  // creating text node and adding fortune
+  var fortuneText = document.createTextNode(magicFortunes[0]);
+  yourFortune.appendChild(fortuneText);
+
 };
 
 button.onclick = shakeBall;
